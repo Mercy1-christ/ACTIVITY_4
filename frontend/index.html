@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html><head><title>NGO Campaigns - Q10</title>
+<style>
+body{font-family:Arial;max-width:1000px;margin:auto;padding:20px}
+input,select{padding:8px;margin:4px;width:180px}
+button{padding:8px 12px;margin:4px;cursor:pointer}
+table{width:100%;border-collapse:collapse;margin-top:20px}
+th,td{border:1px solid #ccc;padding:8px;font-size:14px}
+th{background:#f4f4f4}
+</style>
+</head><body>
+<h2>ICT251 Q10 - NGO Cause Awareness</h2>
+<form id="form">
+<input type="hidden" id="id">
+<input id="campaign_name" placeholder="Campaign Name*" required>
+<input id="cause" placeholder="Cause e.g Environment">
+<input id="location" placeholder="Location e.g Kitwe">
+<input id="organizer" placeholder="Organizer">
+<input id="start_date" placeholder="Start Date 2026-01-10">
+<input id="target_amount" placeholder="Target K" type="number">
+<select id="status"><option>Active</option><option>Pending</option><option>Completed</option><option>Upcoming</option></select>
+<br>
+<input id="description" placeholder="Description" style="width:500px">
+<br>
+<button type="submit">Save Campaign</button>
+<button type="button" onclick="resetForm()">Cancel</button>
+</form>
+
+<table>
+<thead><tr><th>ID</th><th>Name</th><th>Cause</th><th>Location</th><th>Target</th><th>Status</th><th>Action</th></tr></thead>
+<tbody id="tbl"><tr><td colspan=7>Loading...</td></tr></tbody>
+</table>
+
+<script src="app.js"></script>
+</body></html>
